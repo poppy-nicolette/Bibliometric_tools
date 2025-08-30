@@ -5,11 +5,12 @@ from dotenv import load_dotenv
 
 def get_secrets():
     """
-    This function loads the secrets from the .env file and stores them in global variables.
+    This function loads the secrets from the .env file.
+
     Be sure to set the environment variables in your .env file before running this script.
     And add the .env file to your .gitignore file to keep your secrets safe!
     Inputs: None
-    Outputs: None
+    Outputs: Returns a tuple containing the API key and email. Feel free to add more_lines to the tuple if needed.
     """
     #load secret .env file
     load_dotenv()
